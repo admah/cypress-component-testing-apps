@@ -12,5 +12,5 @@ jobs:
       - name: Cypress tests
         uses: cypress-io/github-action@26f9cb4f0e5bf94c6e69edff9b2b01a94cd59f57
         with:
-          working-directory: react-vite-ts
-          build: npx cypress info
+          working-directory: ./react-vite-ts
+          component: true
