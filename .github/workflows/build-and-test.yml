@@ -1,0 +1,16 @@
+name: example-basic
+env:
+  DEBUG: '*'
+on: push
+jobs:
+  basic-react-vite-ts:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Cypress tests
+        uses: cypress-io/github-action@26f9cb4f0e5bf94c6e69edff9b2b01a94cd59f57
+        with:
+          working-directory: react-vite-ts
+          build: npx cypress info
