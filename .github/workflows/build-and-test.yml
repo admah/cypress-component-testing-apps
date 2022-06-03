@@ -9,5 +9,6 @@ jobs:
 
       - name: Cypress tests
         uses: cypress-io/github-action@8d0aa4971b742a8876b4092792309692f777f245
+        with:
           working-directory: ./react-vite-ts
           component: true
