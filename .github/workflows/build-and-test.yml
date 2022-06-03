@@ -1,6 +1,4 @@
 name: example-basic
-env:
-  DEBUG: '*'
 on: push
 jobs:
   basic-react-vite-ts:
@@ -10,7 +8,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Cypress tests
-        uses: cypress-io/github-action@26f9cb4f0e5bf94c6e69edff9b2b01a94cd59f57
+        uses: cypress-io/github-action@03567e03f935c2bcc08b8067b3af25714e93dbe9
         with:
           working-directory: ./react-vite-ts
           component: true
