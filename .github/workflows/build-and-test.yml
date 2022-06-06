@@ -8,7 +8,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Cypress tests
-        uses: cypress-io/github-action@d060b032faaccdaa6d823cf2611c522ff295593a
+        uses: cypress-io/github-action@1879d22f7ddc3b9f34f53dee909f95ee8e6e3838
         with:
           working-directory: ./react-vite-ts
           component: true
